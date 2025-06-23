@@ -65,11 +65,11 @@ Acceptance criteria:
 
 Create the form HTML elements to imitate the mockup:
 
-- [ ] Wrap each group of a label and input elements with a container representing a row.
-- [ ] Maintain a 6px distance between the label and the input.
-- [ ] Keep a 30px distance between each row.
-- [ ] Bolden label text when paired with a text or text-like input field.
-- [ ] Avoid bold formatting for labels paired with checkboxes and radios.
+- [x] Wrap each group of a label and input elements with a container representing a row.
+- [x] Maintain a 6px distance between the label and the input.
+- [x] Keep a 30px distance between each row.
+- [x] Bolden label text when paired with a text or text-like input field.
+- [x] Avoid bold formatting for labels paired with checkboxes and radios.
 - [ ] Utilize a paragraph element if the label element can't be used.
 - [ ] Ensure inputs span the full width available within the parent.
 - [ ] Set the height of inputs with text-like values to 30px.
@@ -77,17 +77,17 @@ Create the form HTML elements to imitate the mockup:
 
 For the "Sign In form":
 
-- [ ] The form should have a border of 1px width and solid style.
-- [ ] The login input element.
-  - [ ] Should require a value.
-  - [ ] Should include a placeholder.
-  - [ ] The value should be validated as an email by the default browser mechanism.
-- [ ] The password input element.
-  - [ ] Should require a value.
-  - [ ] Should include a placeholder.
-  - [ ] The value should be validated to contain a minimum of 8 characters and a maximum of 20 by the default browser mechanism.
-  - [ ] Should hide symbols during typing.
-- [ ] The "Sign in" button should submit the form to initiate field validation using the default browser mechanism.
+- [x] The form should have a border of 1px width and solid style.
+- [x] The login input element.
+  - [x] Should require a value.
+  - [x] Should include a placeholder.
+  - [x] The value should be validated as an email by the default browser mechanism.
+- [x] The password input element.
+  - [x] Should require a value.
+  - [x] Should include a placeholder.
+  - [x] The value should be validated to contain a minimum of 8 characters and a maximum of 20 by the default browser mechanism.
+  - [x] Should hide symbols during typing.
+- [x] The "Sign in" button should submit the form to initiate field validation using the default browser mechanism.
 
 For the "Sign Up Form"
 
