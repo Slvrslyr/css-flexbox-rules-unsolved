@@ -9,11 +9,12 @@
 html,
 body {
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
   background-color: #353843;
+  display: flex;
 }
 
 header {
@@ -34,19 +35,26 @@ section {
   width: 100%;
   max-width: 964px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .logo-search {
+  display: flex;
+  gap: 10%;
 }
 
 .logo {
   min-width: max-content;
   font-size: 28px;
   font-weight: 900;
-  font-family: "Caveat", sans-serif;
+  font-family: 'Caveat', sans-serif;
 }
 
 .search-bar {
@@ -54,6 +62,8 @@ section {
   background: #1f1f27;
   padding: 10px 20px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .search-bar input {
@@ -71,22 +81,32 @@ section {
 }
 
 .options {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10%;
 }
 
 .option {
   min-width: 60px;
+  text-align: center;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .option i {
   font-size: 20px;
   color: #d5ef9a;
+  text-align: center;
 }
 
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .category {
@@ -111,6 +131,9 @@ section {
 }
 
 .view-options {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
 }
 
 i.fa-th-list {
@@ -120,6 +143,8 @@ i.fa-th-list {
 .section-control {
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-control .view-option {
@@ -161,7 +186,7 @@ i.fa-th-list {
 }
 
 .product-price:before {
-  content: "$ ";
+  content: '$ ';
 }
 
 .buy-btn {
@@ -182,10 +207,14 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .grid .product {
   width: 300px;
+  height: fit-content;
   padding-bottom: 30px;
 }
 
@@ -194,26 +223,38 @@ i.fa-th-list {
 }
 
 .grid .product-data {
-  height: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .grid .product-info {
   text-align: center;
+  height: 200px;
   padding: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
 }
 
 .lines .product-image-wrapper {
@@ -222,20 +263,35 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
 .lines .product-action {
+  display: flex;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines-action .product {
+  padding: 20px;
+  display: flex;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +300,25 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  gap: 20px;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
 
 .lines-action .product-action {
   border-left: 1px solid #8d8ba5;
   padding-left: 30px;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
 }
